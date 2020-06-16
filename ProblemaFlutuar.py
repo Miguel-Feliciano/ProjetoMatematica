@@ -25,45 +25,43 @@ def ProblemaFlutuar():
         
         while (True):
            
-            m = od*v
-            print(m)
+            m = od*v #calculo da massa
             
-            
-            print("Mass is = " + str(m),"(Kg), " + "Object has a Density of = ", str(od),"(Kg/m3), " + "Volume is = " + str(v),"(m3), " 
+            print("Mass is = " + str(m),"(Kg), " + "Object has a Density of = ", str(od),"(Kg/m3), " + "Volume is = " + str(v),"(m3),\n" 
                   + "Fluid has a Density of " + str(fd),"(Kg/m3), " + "Gravity is " + str(g),"(m/s2)")
 
             
-            fg = m*g
+            fg = m*g #calculo da força gravítica
             
-            fb = fg/(fd*g)
+            fb = fg/(fd*g) #calculo da força de buoyancy
             
-            a = v**(1/3)
+            a = v**(1/3)  #calculo da aresta do cubo
             
-            c = fb/(a*a)
+            c = fb/(a*a) #calculo do calado
             
             
            
-            print("The Object would float at: " + str(c))
+            print("The Object would float at: " + str(c) + " meters")
             
             
-            print("Press 1 to set new Mass, Press 2 to set new Gravity,Press 3 to set new Fluid Density,\n Press 4 to set new Object Density or Press 5 to set new Volume ")
+            print("Press 1 to set new Mass, Press 2 to set new Gravity,Press 3 to set new Fluid Density,\nPress 4 to set new Object Density or Press 5 to set new Volume ")
 
-            novoinput = input()
+            novavariavel = input()
 
-            if(novoinput == "1"):
+            if(novavariavel == "1"):
                 print("New Mass is... ")
                 m = float(input())
                 v = m/od
-            elif(novoinput == "2"):
+            elif(novavariavel == "2"):
                 print("New Gravity is... ")
                 g = float(input())
-            elif(novoinput == "3"):
+            elif(novavariavel == "3"):
                 print("New Fluid Density is... ")
                 fd = float(input()) 
-            elif(novoinput == "4"):
+            elif(novavariavel == "4"):
                 print("New Object Density is... ")
                 od = float(input())
-            elif(novoinput == "5"):
+            elif(novavariavel == "5"):
                 print("New Volume is... ")
                 v = float(input())
                 m = od*v

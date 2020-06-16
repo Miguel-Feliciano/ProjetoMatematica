@@ -27,14 +27,14 @@ def ProblemaMola():
             print("Mass = " + str(m),"Kg, " + "Gravity is " + str(g),"m/s2, " + 
                   "Resting Length = " + str(r),"m, " + "Spring Constant = " + str(k), "N/m")
         
-            fg = m*g
+            fg = m*g #calculo da força gravítica
             
-            h = (-k *(-r)) + (-fg)
+            h = (-k *(-r)) + (-fg) #calculo auxiliar para simplificar a formula
            
-            l = h/k
+            l = h/k #calculo do cumprimento em equilibro
             
             
-            print("Spring would stretch to" + str(l) + "(m)")
+            print("Spring would stretch to" + str(l) + " meters")
         
             print("Press 1 to set new Gravity: ")
             print("Press 2 to set new Mass: ")
@@ -42,18 +42,18 @@ def ProblemaMola():
             print("Press 4 to set new Resting Length: ")
             
 
-            novoinput = input()
+            novavariavel = input()
 
-            if(novoinput == "1"):
+            if(novavariavel == "1"):
                 print("New Gravity is... ")
                 g = float(input())
-            elif(novoinput == "2"):
+            elif(novavariavel == "2"):
                 print("New Mass is... ")
                 m = float(input())
-            elif(novoinput == "3"):
+            elif(novavariavel == "3"):
                 print("New Spring Constan is... ")
                 k = float(input()) 
-            elif(novoinput == "4"):
+            elif(novavariavel == "4"):
                 print("New Resting Length is... ")
                 r = float(input())
             

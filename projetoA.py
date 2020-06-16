@@ -3,19 +3,19 @@ import ProblemaFlutuar, ProblemaMola
 
 
 def main():
-    MainMenu()
+    menu()
 
-def MainMenu():
+def menu():
 
         print("What problem do you want to solve?")
-        print("1- Floatation")
-        print("2- Springs")
+        print("Press 1 to solve Floatation")
+        print("Press 2 to solve Springs")
 
-        r = input()
+        t = input()
 
-        if (r == "1"):
+        if (t == "1"):
             ProblemaFlutuar.ProblemaFlutuar()
-        elif (r == "2"):
+        elif (t == "2"):
             ProblemaMola.ProblemaMola()
             
             
