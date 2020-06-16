@@ -44,7 +44,7 @@ def ProblemaFlutuar():
             print("The Object would float at: " + str(c) + " meters")
             
             
-            print("Press 1 to set new Mass, Press 2 to set new Gravity,Press 3 to set new Fluid Density,\nPress 4 to set new Object Density or Press 5 to set new Volume ")
+            print("Press 1 to set new Mass, Press 2 to set new Gravity, Press 3 to set new Fluid Density,\nPress 4 to set new Object Density, Press 5 to set new Volume or Press 5 to return to the menu")
 
             novavariavel = input()
 
@@ -65,6 +65,8 @@ def ProblemaFlutuar():
                 print("New Volume is... ")
                 v = float(input())
                 m = od*v
+            elif(novavariavel == "6"):
+                break
             else:
                 print("invalid input.")
                 

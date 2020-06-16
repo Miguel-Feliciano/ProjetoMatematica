@@ -1,5 +1,7 @@
 import math
 
+
+
 def ProblemaMola():
     
     #variaveis
@@ -34,13 +36,13 @@ def ProblemaMola():
             l = h/k #calculo do cumprimento em equilibro
             
             
-            print("Spring would stretch to" + str(l) + " meters")
+            print("Spring would stretch to " + str(l) + " meters")
         
-            print("Press 1 to set new Gravity: ")
-            print("Press 2 to set new Mass: ")
-            print("Press 3 to set new Spring Constant: ")
-            print("Press 4 to set new Resting Length: ")
+           
             
+            
+          
+            print("Press 1 to set new Gravity, Press 2 to set new Mass, Press 3 to set new Spring Constant\n, Press 4 to set new Resting Length or Press 5 to return to the menu")
 
             novavariavel = input()
 
@@ -56,6 +58,9 @@ def ProblemaMola():
             elif(novavariavel == "4"):
                 print("New Resting Length is... ")
                 r = float(input())
+            elif(novavariavel == "5"):
+                break
+                
             
             else:
                 print("invalid input.")
