@@ -26,8 +26,8 @@ def ProblemaMola():
         
         while (True):
             
-            print("Mass = " + str(m),"Kg, " + "Gravity is " + str(g),"m/s2, " + 
-                  "Resting Length = " + str(r),"m, " + "Spring Constant = " + str(k), "N/m")
+            print("Mass is " + str(m),"Kg, " + "Gravity is " + str(g),"m/s2, " + 
+                  "Resting Length is " + str(r),"m, " + "Spring Constant is " + str(k), "N/m")
         
             fg = m*g #calculo da força gravítica
             
@@ -42,7 +42,7 @@ def ProblemaMola():
             
             
           
-            print("Press 1 to set new Gravity, Press 2 to set new Mass, Press 3 to set new Spring Constant\n, Press 4 to set new Resting Length or Press 5 to return to the menu")
+            print("Press 1 to set new Gravity, Press 2 to set new Mass, Press 3 to set new Spring Constant,\n Press 4 to set new Resting Length or Press 5 to return to the menu")
 
             novavariavel = input()
 

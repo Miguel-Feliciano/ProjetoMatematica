@@ -27,7 +27,7 @@ def ProblemaFlutuar():
            
             m = od*v #calculo da massa
             
-            print("Mass is = " + str(m),"(Kg), " + "Object has a Density of = ", str(od),"(Kg/m3), " + "Volume is = " + str(v),"(m3),\n" 
+            print("Mass is " + str(m),"(Kg), " + "Object has a Density of " + str(od),"(Kg/m3), " + "Volume is " + str(v),"(m3),\n" 
                   + "Fluid has a Density of " + str(fd),"(Kg/m3), " + "Gravity is " + str(g),"(m/s2)")
 
             
@@ -44,7 +44,7 @@ def ProblemaFlutuar():
             print("The Object would float at: " + str(c) + " meters")
             
             
-            print("Press 1 to set new Mass, Press 2 to set new Gravity, Press 3 to set new Fluid Density,\nPress 4 to set new Object Density, Press 5 to set new Volume or Press 5 to return to the menu")
+            print("Press 1 to set new Mass, Press 2 to set new Gravity, Press 3 to set new Fluid Density,\nPress 4 to set new Object Density, Press 5 to set new Volume or Press 6 to return to the menu")
 
             novavariavel = input()
 
